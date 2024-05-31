@@ -26,7 +26,7 @@ consumer.Received += (model, ea) =>
 {
     var body = ea.Body.ToArray();
     var message = Encoding.UTF8.GetString(body);
-    Console.WriteLine($"Received message in 1: {message}");
+    Console.WriteLine($"Received message in 2: {message}");
 };
 
 channel.BasicConsume(queue: queueName, autoAck: true, consumer: consumer);
