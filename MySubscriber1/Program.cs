@@ -20,7 +20,7 @@ channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
 
 var consumer = new EventingBasicConsumer(channel);
 
-channel.QueueBind(queue: queueName, exchange: "pubsub", routingKey: "");
+// channel.QueueBind(queue: queueName, exchange: "pubsub", routingKey: "");
 
 consumer.Received += (model, ea) =>
 {
